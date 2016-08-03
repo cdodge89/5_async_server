@@ -1,0 +1,22 @@
+{
+  "name": "5_async_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdodge89/5_async_server.git"
+  },
+  "author": "Connor Dodge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdodge89/5_async_server/issues"
+  },
+  "homepage": "https://github.com/cdodge89/5_async_server#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

@@ -9,14 +9,33 @@ router.route('/')
         res.end();
     })
 
+router.route('/:id')
+    .get(function(req,res){
+        var id = req.params.id;
+        var actor = getActorById(id);
+        if(actor){
+            res.json(actor);
+        } else {
+            res.status(404);
+            console.error('404 ', 'ACTOR NOT FOUND');
+            res.end();
+        }
+    })
+
 //function declarations
 
 function getActorById(id){
-    for(var i = 0; i < data.length; i++){
-        for(var i = 0; i < data[i].actors.length; i++){
-            
+    var movies = data.movies;
+    for(var i = 0; i < movies.length; i++){
+        var movie = movies[i];
+        for(var j = 0; j < movie.actors.length; j++){
+            var actor = movie.actors[j];
+            if(actor.id === +id){
+                return actor;
+            }
         }
     }
+    return false;
 }
 
 module.exports = router;

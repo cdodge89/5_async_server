@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cdodge89/5_async_server#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "fs-extra": "^0.30.0"
   }
 }

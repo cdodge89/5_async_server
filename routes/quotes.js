@@ -1,15 +1,15 @@
 var express = require('express');
 const fs = require('fs');
 var file = 'moviedb.json';
-var data;
-var file_content = fs.readFile(file,function(err,data){
-    if(err){
-        console.log(err);
-    } else{
-        data = JSON.parse(data);
-        console.log(data);
-    }
-});
+var data = require('../data/moviedb');
+// var file_content = fs.readFile(file,function(err,data){
+//     if(err){
+//         console.log(err);
+//     } else{
+//         data = JSON.parse(data);
+//         console.log(data);
+//     }
+// });
 //var data = JSON.parse(file_content);
 
 var router = express.Router();

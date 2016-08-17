@@ -1,5 +1,13 @@
 var express = require('express');
-var data = require('../data/moviedb');
+var fs = require('fs-extra');
+var uuid = require('uuid');
+var data;
+fs.readJson('./data/moviedb.json',function(err,jsonObj){
+    if(err){
+        console.log('error ',err);
+    }
+    var data = jsonObj;
+});
 
 var router = express.Router();
 

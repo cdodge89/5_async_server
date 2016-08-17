@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/cdodge89/5_async_server#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "fs-extra": "^0.30.0"
+    "fs-extra": "^0.30.0",
+    "uuid": "^2.0.2"
   }
 }
